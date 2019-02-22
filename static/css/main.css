@@ -1,0 +1,24 @@
+body {
+}
+
+p {
+	font-size: 5px;
+	font: sans-serif;
+}
+
+.s3 {
+	width: 400px;
+    border: 5px solid yellowgreen;
+	padding: 10px;
+    margin: 25px;
+	float: left;
+}
+
+.ec2 {
+	width: 400px;
+	border: 5px solid yellowgreen;
+	padding: 10px;
+	margin: 25px;
+	clear:both;
+}
+

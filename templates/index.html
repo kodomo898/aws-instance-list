@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="static/css/main.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="s3">
+				<h3 class="text-muted">S3 bucket list</h3>
+					{% for name_list, date_list in bucket_info %}
+						<p>{{name_list}} {{date_list}}</p>
+					{% endfor %}
+			</div>
+			<div class="ec2">
+				<h3 class="text-muted">EC2 list</h3>
+					{% for ec2_tag, ec2_state, ec2_size in ec2_info %}
+						<p>{{ec2_tag}} {{ec2_state}} {{ec2_size}}</p>
+					{% endfor %}
+
+			</div>
+		</div>
+	</body>
