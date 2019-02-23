@@ -6,6 +6,18 @@ p {
 	font: sans-serif;
 }
 
+.box1 {
+	float: left;
+	margin: 20px;
+	border: 5px solid yellowgreen;
+	padding: 5px;
+}
+
+.box2 {
+	float: left;
+	margin: 20px;
+}
+
 .s3 {
 	width: 400px;
     border: 5px solid yellowgreen;
@@ -22,3 +34,27 @@ p {
 	clear:both;
 }
 
+.container {
+	overflow: hidden;
+}
+
+/* clearfix */
+.boxContainer:before,
+.boxContainer:after {
+	content: "";
+	display: table;
+}
+		 
+.boxContainer:after {
+	clear: both;
+}
+			 
+/* For IE 6/7 (trigger hasLayout) */
+.boxContainer {
+	zoom: 1;
+}
+
+.table {
+	font-size: 5px;
+	font: sans-serif;
+}
